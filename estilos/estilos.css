@@ -1,0 +1,12 @@
+img{
+    border: dotted 3px;
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
+body{
+    background-color: bisque;
+}
+h1{
+    color: blueviolet;
+}
