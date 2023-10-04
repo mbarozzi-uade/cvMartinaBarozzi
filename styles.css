@@ -19,7 +19,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100vh;
+    height: 75vh;
     background-color: #e7e7e7;
 }
 
@@ -90,7 +90,6 @@ footer {
     color: #fff; /* Text color for the footer */
     padding: 20px; /* Adjust padding as needed */
     text-align: center; /* Center-align the content in the footer */
-    position: absolute;
     bottom: 0;
     width: 100%;
 }
@@ -162,7 +161,7 @@ footer {
 .text-right {
     float: right;
     margin-right: 30%;
-    margin-bottom: 5%;
+    margin-bottom: 15%;
     font-size: 18px;
 }
 
@@ -200,10 +199,57 @@ footer {
 .paragraph-2 {
     display: inline-block;
     width: 100%; /* Adjust width as needed to create space for both paragraphs */
-    margin-left: 180px;
+    margin-left: 0px;
     vertical-align: top; /* Align paragraphs at the top */
     /* Additional styling for paragraphs as needed */
 }
 #bold {
     font-weight: bold;
+}
+/* Within the existing media query for screens <= 768px */
+@media (max-width: 768px) {
+    /* Add styles for screens with a maximum width of 768px (e.g., tablets and smaller screens) */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img {
+        margin-left: 0;
+        margin-bottom: 10px;
+        max-width: 80%; /* Make the logo responsive */
+        height: auto;
+    }
+
+    nav {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 10px;
+        align-items: center; /* Align content vertically within main */
+    }
+
+    /* Make all images within the content section responsive */
+    .content-section img {
+        max-width: 100%; /* Make all images responsive */
+        height: auto;
+    }
+
+    /* Add more media queries and styles for smaller screens if needed */
 }
