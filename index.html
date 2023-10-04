@@ -1,21 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Martina Barozzi</title>
-    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>cv Martina Barozzi</title>
 </head>
 <body>
-    <h1>Curriculum Vitae</h1>
-    <h2>Datos personales</h2>
-    <img src="img/perrito.jpg" alt="perrito">
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quidem totam tempore animi assumenda sint aliquid ex quos, molestias cum, reiciendis rerum omnis mollitia officiis vero enim, quaerat modi veritatis.</p>
-    <ul>
-        <a href="index.html"><li>Datos Personales</li></a>
-        <a href="educacion.html"><li>Educacion</li></a>
-        <a href="experiencia.html"><li>Experiencia</li></a>
-        <a href="competencias.html"><li>Competencias</li></a>
-    </ul>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li class="active"><a href="#">home</a></li>
+                <li><a href="conocimientos.html">conocimientos</a></li>
+                <li><a href="experiencia.html">experiencia</a></li>
+                <li><a href="educacion.html">educación</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content-section">
+            <div class="section-left">
+                <img src="img/foto.png" alt="foto">
+            </div>
+            <div class="section-right">
+                <h2>Datos Personales:</h2>
+                <div class="button-container">
+                    <div class="button">
+                        <a href="tel:+1234567890"><img src="img/telefono.png" alt="telefono"></a>
+                    </div>
+                    <div class="button">
+                        <a href="mailto:martinabarozzi@hotmail.com"><img src="img/mail.png" alt="mail"></a>
+                    </div>
+                    <div class="button">
+                        <a href="https://www.google.com/maps/place/Recoleta,+CABA/@-34.5847906,-58.4169425,14z/data=!3m1!4b1!4m6!3m5!1s0x95bcca99c609fc2f:0x392ca99351808a75!8m2!3d-34.5873825!4d-58.3972762!16zL20vMDVoMmJr?entry=ttu" target="_blank"><img src="img/pin.png" alt="pin"></a>
+                    </div>
+                </div>                
+                <p>Objetivo:<br>
+                    Estudiante de Desarrollo de Software con una pasión por la<br>
+                    programación y la resolución de problemas. Busco adquirir<br>
+                    experiencia práctica en el desarrollode software y contribuir<br>
+                    al éxito de proyectos emocionantes. Comprometida con el<br>
+                    aprendizaje constante y la mejora de mis habilidades técnicas.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Martina Barozzi</p>
+    </footer>
 </body>
 </html>

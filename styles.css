@@ -1,0 +1,156 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #e7e7e7;
+    color: #fff;
+    display: flex;
+    align-items: last baseline;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #e7e7e7;
+}
+
+/* Style the logo */
+.logo img {
+    width: 50%; /* Adjust the width as needed */
+    margin-left: 15%;
+}
+
+/* Style the navigation menu */
+nav {
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 90px;
+
+    position: relative;
+    top: -10px; /* Adjust the top value to lift the buttons */
+}
+
+nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Add hover animation to buttons */
+nav a:hover {
+    color: #FFBA09; /* Change the color on hover */
+    transition: transform 0.3s;
+}
+
+/* Add an underline animation on hover */
+nav a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #FFBA09; /* Change the color on hover */
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Style the active button */
+.active a {
+    color: #FFBA09 ; /* Change the text color for the active button */
+}
+
+footer {
+    background-color: #EC5088; 
+    color: #fff; /* Text color for the footer */
+    padding: 20px; /* Adjust padding as needed */
+    text-align: center; /* Center-align the content in the footer */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Style the content section */
+.content-section {
+    display: flex;
+
+    align-items: center; /* Center vertically */
+    padding: 20px;
+    text-align: center; /* Center the text within the section */
+}
+
+.section-left img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    width: 90%;
+    padding: 10%;
+    margin-left: 10%;
+}
+
+.section-right {
+    padding-left: 10%; /* Add spacing between the image and text */
+    text-align: left; /* Adjust text alignment as needed */
+    margin-left: 12%;
+}
+
+/* Style the title */
+.section-right h2 {
+    font-size: 24px;
+    margin-bottom: 10px; /* Add spacing below the title */
+}
+
+/* Style the button container */
+.button-container {
+    display: flex;
+    flex-direction: row; /* Align buttons horizontally */
+    align-items: center; /* Center buttons vertically */
+    margin-top: 20px; /* Add spacing above the buttons */
+}
+
+.button {
+    margin: 10%; /* Add spacing between the buttons (left and right) */
+    max-width: 80px; /* Set a maximum width for the buttons to make them smaller */
+    width: 40%;
+    
+}
+
+.button img {
+    width: 150%;
+}
+
+/* Style the paragraph */
+.section-right p {
+    font-size: 18px;
+}
+.content-section {
+    background-color: #e7e7e7; /* Set the desired background color */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
