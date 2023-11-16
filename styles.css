@@ -1,31 +1,46 @@
 /* Reset some default styles */
-body, h1, h2, p, ul, li {
+body, h1, h2, ul, li {
     margin: 0;
     padding: 0;
 }
+body {
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+    }
 
 /* Style the header */
 header {
     background-color: #e7e7e7;
     color: #fff;
     display: flex;
-    align-items: last baseline;
+    align-items:baseline;
     justify-content: space-between;
     padding: 20px;
+    width: 100%;
 }
 
 
 main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 75vh;
+    justify-content: center;
+    height: 100%;
+    height: 100%;
+    width: auto;
     background-color: #e7e7e7;
+}
+p {
+    display: flex;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 /* Style the logo */
 .logo img {
-    width: 50%; /* Adjust the width as needed */
+    width: 15rem; /* Adjust the width as needed */
     margin-left: 15%;
 }
 
@@ -88,32 +103,44 @@ nav a:hover::before {
 footer {
     background-color: #EC5088; 
     color: #fff; /* Text color for the footer */
-    padding: 20px; /* Adjust padding as needed */
-    text-align: center; /* Center-align the content in the footer */
+    padding: 20px;
+    padding-bottom: 0; /* Adjust padding as needed */
+    align-items: center; /* Center-align the content in the footer */
     bottom: 0;
     width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    text-align: center;
 }
 
 
 /* Style the content section */
 .content-section {
     display: flex;
-
     align-items: center; /* Center vertically */
     padding: 00px;
     text-align: center; /* Center the text within the section */
+    max-width: 100%;
+}
+.content-section img {
+    display: flex;
+    align-items: auto;
+    margin: 0px;
+    padding-left: 60px;   
 }
 
 .section-left img {
     max-width: 100%; /* Ensure the image doesn't exceed its container */
     width: 80%;
     padding: 10%;
-    margin-left: 15%;
+    margin-left: -10px;
 }
 
 .section-right {
     float: left;
-    margin-right: 330px;
+    margin-right: 20rem;
+    margin-bottom: 10px;
     text-align: left; /* Adjust text alignment as needed */
     
 }
@@ -121,18 +148,21 @@ footer {
 /* Style the title */
 .section-right h2 {
     font-size: 24px;
-    margin-bottom: 10px; /* Add spacing below the title */
+    margin-bottom: 10px;
+    margin-bottom: 0; /* Add spacing below the title */
 }
 
 /* Style the button container */
 .button-container {
     display: flex;
+    margin-top: 20px;
     flex-direction: row; /* Align buttons horizontally */
     align-items: center; /* Center buttons vertically */
     margin-top: 20px; /* Add spacing above the buttons */
 }
 
 .button {
+    margin-bottom:10px;
     margin: 10%; /* Add spacing between the buttons (left and right) */
     max-width: 80px; /* Set a maximum width for the buttons to make them smaller */
     width: 40%;
@@ -153,6 +183,7 @@ footer {
 }
 
 .img-left {
+    max-width: 100%;
     float:left;
     width: 30%;
     padding: 5%;
@@ -172,14 +203,19 @@ footer {
 }
 
 .img-right {
+    max-width: 100%;
     float:right;
     width: 30%;
     padding: 5%;
 }
-.img- {
+.img {
     width: 10%;
     margin-top: 4%;
     margin-left: 7%;
+}
+.img .content-section{
+    size: 364px;
+    margin-left: 120px;
 }
 
 /* Style the container to display flex and align items */
@@ -207,23 +243,23 @@ footer {
     font-weight: bold;
 }
 /* Within the existing media query for screens <= 768px */
+
+/* Media query para pantallas <= 768px */
 @media (max-width: 768px) {
-    /* Add styles for screens with a maximum width of 768px (e.g., tablets and smaller screens) */
     header {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
 
     .logo img {
         margin-left: 0;
         margin-bottom: 10px;
-        max-width: 80%; /* Make the logo responsive */
+        max-width: 80%; /* Hacer el logo responsive */
         height: auto;
     }
 
     nav {
-        padding-left: 0;
-        padding-right: 0;
+        padding: 0;
     }
 
     nav ul {
@@ -242,14 +278,18 @@ footer {
 
     main {
         padding: 10px;
-        align-items: center; /* Align content vertically within main */
+        align-items: center; /* Alinear contenido verticalmente dentro de main */
     }
 
-    /* Make all images within the content section responsive */
-    .content-section img {
-        max-width: 100%; /* Make all images responsive */
-        height: auto;
+    .content-section {
+        flex-direction: column;
     }
 
-    /* Add more media queries and styles for smaller screens if needed */
+    .section-left img {
+        margin-left: 0;
+    }
+    .section-right{
+        margin-right: 0;
+        margin-bottom:0;
+    }
 }
