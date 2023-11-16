@@ -118,7 +118,7 @@ const questions = [
       answers: [
         { text: 'estudio juridico', correct: false },
           { text: 'Estudio Barozzi', correct: true},
-          {text: 'cerro catedral' correct: false},
+          {text: 'cerro catedral', correct: false},
           {text: 'aerolineas argentinas', correct: false}
       ]
     }
