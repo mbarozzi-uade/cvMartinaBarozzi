@@ -78,48 +78,48 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-      question: '¿Cual es la capital de Venezuela?',
+      question: '¿que idiomas hablo?',
       answers: [
-          { text: 'Valencia', correct: false },
-          { text: 'Barcelona', correct: false },
-          {text: 'Caracas', correct: true },
-          {text: 'Cucuta', correct: false}
+          { text: 'español y aleman', correct: false },
+          { text: 'español', correct: false },
+          {text: 'español e ingles', correct: true },
+          {text: 'frances', correct: false}
       ]
   },
   {
-      question: '¿Qué es el sol?',
+      question: '¿en que escuela termine mis estudios?',
       answers: [
-          { text: 'Planeta', correct: false },
-          { text: 'Estrella', correct: true},
-          {text: 'Universo', correct: false},
-          {text: 'Agujero', correct: false}
+          { text: 'colegio san fernando', correct: false },
+          { text: 'colegio san patricio', correct: true},
+          {text: 'escuela nro 3', correct: false},
+          {text: 'colegio etcheverry boneo', correct: false}
       ]
   },
   {
-      question: '¿En que año nos encontramos actualmente?',
+      question: '¿en que estado estan mis estudios universitarios?',
       answers: [
-          { text: '1998', correct: false },
-          { text: 'Yo que sé', correct: true},
-          {text: '2020', correct: false},
-          {text: '2021', correct: false}
+          { text: 'carrera universitaria completa', correct: false },
+          { text: 'carrera universitaria en transcurso', correct: true},
+          {text: 'posgrado en transcurso', correct: false},
+          {text: 'terciario terminado', correct: false}
       ]
   },
       {
-      question: '¿Cuanto es 4 * 2?',
+      question: '¿que carrera estudio?',
         answers: [
-          { text: '6', correct: false },
-          { text: '8', correct: true },
-          { text: '10', correct: false },
-          { text: '23', correct: false }
+          { text: 'marketing', correct: false },
+          { text: 'desarrollo de software', correct: true },
+          { text: 'ingenieria de software', correct: false },
+          { text: 'desarrollo de videojuegos', correct: false }
 
         ]
       },
-      { question: '¿Cuál es streamer favorito?',
+      { question: '¿en donde trabajo?',
       answers: [
-        { text: 'Pedra', correct: false },
-          { text: 'Eljuja y Baitybai', correct: true},
-          {text: 'Willyrex', correct: false},
-          {text: 'Pedra-kun', correct: false}
+        { text: 'estudio juridico', correct: false },
+          { text: 'Estudio Barozzi', correct: true},
+          {text: 'cerro catedral' correct: false},
+          {text: 'aerolineas argentinas', correct: false}
       ]
     }
     ]
